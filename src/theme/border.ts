@@ -1,7 +1,7 @@
 export const border = {
   borderRadius: {
     none: '0',
-    medium: '0.4rem',
+    medium: '0.3rem',
     large: '1.5rem',
     pill: '10rem',
     circle: '50%'

@@ -1,8 +1,8 @@
 import '../.jest/next-image.mock'
 import { MINIMAL_VIEWPORTS } from '@storybook/addon-viewport'
-import { addDecorator } from '@storybook/react'
+// import { addDecorator } from '@storybook/react'
 import { themes } from '@storybook/theming'
-import { withNextRouter } from 'storybook-addon-next-router'
+// import { withNextRouter } from 'storybook-addon-next-router'
 import GlobalStyles from 'styles/GlobalStyles'
 
 const customViewports = {
@@ -76,7 +76,7 @@ export const parameters = {
   }
 }
 
-addDecorator(withNextRouter())
+// addDecorator(withNextRouter())
 
 export const decorators = [
   Story => (

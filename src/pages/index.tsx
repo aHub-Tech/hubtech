@@ -1,5 +1,5 @@
-import Home from 'ui/pages/Home';
+import Home from 'pages/home'
 
-export default function HomeRoute() {
-  return <Home />;
+export default function Index() {
+  return <Home />
 }

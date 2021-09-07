@@ -1,2 +1,6 @@
 !.storybook
 !.jest
+next-env.d.ts
+coverage
+node_modules
+public

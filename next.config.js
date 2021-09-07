@@ -1,10 +1,30 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const withPWA = require('next-pwa')
-const isProd = process.env.NODE_ENV === 'production'
+const isDev = process.env.NODE_ENV === 'development'
 
 module.exports = withPWA({
   pwa: {
-    dest: 'public',
-    disable: !isProd
-  }
+    disable: isDev,
+    dest: 'public'
+  },
+  images: {
+    deviceSizes: [320, 420, 768, 1024, 1200, 1300, 1500, 1700],
+    iconSizes: [],
+    domains: [],
+    path: '/_next/image',
+    loader: 'default'
+  },
+  eslint: {
+    dirs: [
+      'components',
+      'hooks',
+      'ui',
+      'pages',
+      'services',
+      'styles',
+      'theme',
+      'utils'
+    ]
+  },
+  reactStrictMode: true,
+  pageExtensions: ['tsx']
 })

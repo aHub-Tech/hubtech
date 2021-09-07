@@ -1,0 +1,41 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs'
+import InputOutlined from '.'
+import * as stories from './stories'
+
+<Meta
+  title="Design System/InputOutlined"
+  component={InputOutlined}
+  args={{
+    placeholder: 'Texto de Exemplo',
+    label: 'Texto de Exemplo',
+    type: 'text',
+    error: ''
+  }}
+  argTypes={{
+    error: {
+      options: ['', 'Preenchimento inválido!'],
+      control: {
+        type: 'inline-radio'
+      }
+    },
+    onBlur: { action: 'onBlur' }
+  }}
+  parameters={{
+    controls: {
+      exclude: ['icon', 'id', 'type', 'disabled'],
+      sort: 'requiredFirst'
+    }
+  }}
+/>
+
+# InputOutlined
+
+This is a general component for text input.
+
+### Default
+
+The component receives common input props as well as icons and validation messages.
+
+<Canvas>
+  <Story story={stories.Default} />
+</Canvas>

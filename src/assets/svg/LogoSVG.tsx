@@ -10,6 +10,6 @@ const LogoSVG = () => (
       fillRule="nonzero"
     ></path>
   </svg>
-);
+)
 
-export default LogoSVG;
+export default LogoSVG

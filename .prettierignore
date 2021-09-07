@@ -1,2 +1,3 @@
 !.storybook
 !.jest
+next-env.d.ts

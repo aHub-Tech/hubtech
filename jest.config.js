@@ -1,16 +1,24 @@
 module.exports = {
   testEnvironment: 'jsdom',
-  testPathIgnorePatterns: ['/node_modules/', '/.next/'],
+  testPathIgnorePatterns: ['/node_modules', '/.next/'],
   collectCoverage: true,
   collectCoverageFrom: [
-    'src/**/*.ts(x)?',
-    '!src/**/stories.tsx',
-    '!src/assets/**',
-    '!src/pages/**',
-    '!src/themes/**',
-    '!src/**/types/**',
-    '!src/**/styles.ts'
+    'src/components/**/*.tsx',
+    'src/ui/**/*.tsx',
+    'src/hooks/**/*.ts(x)?',
+    '!src/components/index.tsx',
+    '!src/hooks/index.ts',
+    '!src/**/stories.(ts|md)x',
+    '!src/pages/**/*.ts(x)?',
+    '!src/styles/**/*.ts',
+    '!src/types/**/*.d.ts',
+    '!src/theme/**/*.d.ts',
+    '!src/**/mock.ts'
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
-  modulePaths: ['<rootDir>/src/']
+  modulePaths: ['<rootDir>/src/', '<rootDir>/.jest'],
+  moduleNameMapper: {
+    '^styled-components':
+      '<rootDir>/node_modules/styled-components/dist/styled-components.browser.cjs.js'
+  }
 }

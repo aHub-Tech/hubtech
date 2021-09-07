@@ -1,0 +1,42 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs'
+import Button from '.'
+import * as stories from './stories'
+
+<Meta
+  title="Design System/Button"
+  component={Button}
+  args={{
+    text: 'Clique aqui',
+    title: 'Instructions',
+    size: 'xLarge',
+    color: 'blue',
+    disabled: false,
+    fullWidth: false,
+    fullWidthMobile: false
+  }}
+  argTypes={{
+    size: {
+      options: ['xxSmall', 'xSmall', 'small', 'medium', 'large', 'xLarge'],
+      control: { type: 'inline-radio' }
+    },
+    color: {
+      options: ['red', 'green', 'blue'],
+      control: { type: 'inline-radio' }
+    },
+    onClick: { action: 'onClick' }
+  }}
+  parameters={{ controls: { exclude: ['icon'], sort: 'requiredFirst' } }}
+/>
+
+# Button
+
+This is a general purpose button component.
+
+### Default
+
+The button receives props for styling, icons, as well as a click event,
+and makes its reference available through the forwardRef() hook.
+
+<Canvas>
+  <Story story={stories.Default} />
+</Canvas>

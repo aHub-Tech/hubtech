@@ -1,25 +1,39 @@
-import { AppProps } from 'next/app';
-import Head from 'next/head';
+import { Fragment } from 'react'
+import type { AppProps } from 'next/app'
+import Head from 'next/head'
+import Router from 'next/router'
+import NProgress from 'nprogress'
+import GlobalStyles from 'styles/GlobalStyles'
+import { Page } from 'types/page'
+import 'styles/loading.css'
+import * as C from 'components'
 
-import GlobalStyles from 'themes/global';
+Router.events.on('routeChangeStart', () => NProgress.start())
+Router.events.on('routeChangeComplete', () => NProgress.done())
+Router.events.on('routeChangeError', () => NProgress.done())
 
-function App({ Component, pageProps }: AppProps) {
+type Props = AppProps & { Component: Page }
+
+export default function App({ Component, pageProps }: Props) {
+  const Layout = Component.Layout || Fragment
+
   return (
     <>
-      <Head>
-        <title>Next.js Pro - Boilerplate</title>
-        <link rel="shortcut icon" href="/img/icon.png" />
-        <link rel="apple-touch-icon" href="/img/icon.png" />
-        <link rel="manifest" href="/manifest.json" />
-        <meta
-          name="description"
-          content="A simple Next.js Boilerplate Ready to production"
-        />
-      </Head>
-      <GlobalStyles />
-      <Component {...pageProps} />
-    </>
-  );
-}
+      <Layout>
+        <Head>
+          <meta charSet="utf-8" />
+          <meta
+            name="viewport"
+            content="minimum-scale=1, initial-scale=1, width=device-width"
+          />
+          <title>Hubtech</title>
+        </Head>
 
-export default App;
+        <Component {...pageProps} />
+
+        <GlobalStyles />
+      </Layout>
+      <C.VLibras />
+    </>
+  )
+}

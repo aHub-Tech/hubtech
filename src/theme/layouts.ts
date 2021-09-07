@@ -15,6 +15,6 @@ export const layouts = {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1300px;
+    max-width: 1280px;
   `
 }

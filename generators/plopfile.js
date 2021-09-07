@@ -30,5 +30,5 @@ module.exports = (plop) => {
         templateFile: 'templates/test.tsx.hbs'
       }
     ]
-  })
-}
+  });
+};

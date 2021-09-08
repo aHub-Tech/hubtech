@@ -3,7 +3,7 @@ export const typography = {
     title1: '6.4rem',
     title2: '4rem',
     title3: '3.1rem',
-    title4: '2.4rem',
+    title4: '2.8rem',
     subtitle1: '2rem',
     subtitle2: '1.8rem',
     subtitle3: '1.7rem',

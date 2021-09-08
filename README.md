@@ -3,7 +3,7 @@
 ![Logo](public/img/logo.png)
 </div>
 
-<h1 align="center">Projeto: Website Hubtech Site</h1>
+<h1 align="center">Projeto: Site Hub Tech</h1>
 
 `* incluir badges de build, test, deploy e homolog`
 

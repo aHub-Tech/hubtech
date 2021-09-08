@@ -1,7 +1,7 @@
 import { memo } from 'react'
 import { toast } from 'react-toastify'
 import { injectStyle } from 'react-toastify/dist/inject-style'
-import * as S from 'components/Toast/styles'
+import * as S from './styles'
 
 if (typeof window !== 'undefined') injectStyle()
 

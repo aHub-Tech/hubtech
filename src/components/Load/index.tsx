@@ -1,4 +1,4 @@
-import * as S from 'components/Load/styles'
+import * as S from './styles'
 
 const Load = () => (
   <S.Container>

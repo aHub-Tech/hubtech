@@ -1,5 +1,5 @@
 import { InputHTMLAttributes, ReactNode, useState } from 'react'
-import * as S from 'components/InputOutlined/styles'
+import * as S from './styles'
 
 export interface InputOutlinedProps
   extends InputHTMLAttributes<HTMLInputElement> {

@@ -1,5 +1,5 @@
 import { ElementType } from 'react'
-import * as S from 'components/Title/styles'
+import * as S from './styles'
 
 export type TitleProps = {
   title: string

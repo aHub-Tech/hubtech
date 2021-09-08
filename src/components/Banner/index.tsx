@@ -1,4 +1,4 @@
-import * as S from 'components/Banner/styles'
+import * as S from './styles'
 
 const Banner = () => (
   <S.Wrapper>

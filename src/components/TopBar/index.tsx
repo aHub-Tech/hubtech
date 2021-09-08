@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import * as S from 'components/TopBar/styles'
+import * as S from './styles'
 
 const TopBar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false)

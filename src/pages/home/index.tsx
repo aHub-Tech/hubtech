@@ -3,6 +3,7 @@ import Default from 'layouts/Default'
 // import { GetServerSideProps } from 'next'
 import Head from 'next/head'
 import * as S from 'pages/home/styles'
+import * as C from 'components'
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       <Head>
         <title>Página Inicial</title>
       </Head>
-      <h1>Home h1</h1>
+      <C.Title as="h3" title="Teste" />
       <S.Container>Home</S.Container>
     </>
   )

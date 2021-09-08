@@ -9,6 +9,17 @@
 
 <br />
 
+# :rocket: Design System:
+
+https://ahubtech-design-system.netlify.app/
+
+<br />
+
+Até aqui temos os componentes e o design system parcial do site, os próximos passos desta primeira etapa serão:
+
+- [ ] Criar as páginas iniciais (Lista de cretaors e home)
+- [ ] Publicar a primeira versão
+
 # :camera_flash: Screenshots do Projeto
 
 `* colocar imagens do projeto`

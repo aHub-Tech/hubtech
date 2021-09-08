@@ -4,9 +4,8 @@
 </div>
 
 <br />
-<br />
 
-<h1 align="center">Projeto Boilerplate Next + Typescript + Styled-Components</h1>
+<h1 align="center">Projeto Hubtech Site</h1>
 
 <br />
 
@@ -16,11 +15,13 @@
 
 ![Imagem do projeto - mobile](screenshots/mobile.png)
 
+<br />
+
 # :memo: Sobre o Projeto
 
 Este projeto foi desenvolvido para uso como boilerplate default para a Hubtech.
 
-Para visualizar o projeto 'online' [clique aqui](https://meusitenavercel).
+Para visualizar o projeto 'online' [clique aqui](https://meu-site-na-vercel).
 
 <br />
 
@@ -52,6 +53,8 @@ Para visualizar o projeto 'online' [clique aqui](https://meusitenavercel).
 
 - [x] Prover informações sobre os creators;
 
+<br />
+
 ---
 
 # :triangular_flag_on_post: Pré-Requisitos
@@ -72,11 +75,15 @@ Para visualizar o projeto 'online' [clique aqui](https://meusitenavercel).
 git clone https://github.com/aHub-Tech/hubtech.git
 ```
 
+<br />
+
 ## Instalar Dependências:
 
 ```bash
 yarn
 ```
+
+<br />
 
 ## Executar Projeto em Modo de Desenvolvimento:
 
@@ -86,11 +93,15 @@ yarn dev
 
 Disponível em http://localhost:3000
 
+<br />
+
 ## Gerar Build de Produção:
 
 ```bash
 yarn build
 ```
+
+<br />
 
 ## Executar Projeto em Modo de Produção:
 
@@ -100,17 +111,23 @@ yarn start
 
 Disponível em http://localhost:3000
 
+<br />
+
 ## Executar Testes:
 
 ```bash
 yarn test
 ```
 
+<br />
+
 ## Executar Testes em Modo Watch:
 
 ```bash
 yarn test:w
 ```
+
+<br />
 
 ## Inciar Storybook em Modo de Desenvolvimento:
 
@@ -120,17 +137,23 @@ yarn sb
 
 Disponível em http://localhost:6006
 
+<br />
+
 ## Gerar Build de Produção do Storybook:
 
 ```bash
 yarn build-sb
 ```
 
+<br />
+
 ## Gerar Pasta de Componentes com Todos os Arquivos de Desenvolvimento:
 
 ```bash
 yarn generate NomeDoComponente
 ```
+
+<br />
 
 ## Executar lints:
 
@@ -141,9 +164,3 @@ yarn lint
 ```bash
 yarn next:lint
 ```
-
-<br />
-
----
-
-# :closed_book: Autor

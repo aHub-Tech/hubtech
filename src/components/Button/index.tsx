@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes, forwardRef, ReactNode } from 'react'
-import * as S from 'components/Button/styles'
+import * as S from './styles'
 
 export type SizeProps =
   | 'xxSmall'
@@ -9,9 +9,17 @@ export type SizeProps =
   | 'large'
   | 'xLarge'
 
-export type ColorProps = string | undefined
+export type ColorProps =
+  | 'facebook'
+  | 'discord'
+  | 'instagram'
+  | 'linkedin'
+  | 'twitch'
+  | 'github'
+  | 'youtube'
+  | 'link'
 
-export interface BtnProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export type BtnProps = {
   icon?: ReactNode
   text?: string
   size?: SizeProps
@@ -20,7 +28,7 @@ export interface BtnProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   fullWidthMobile?: boolean
   borderRadiusFull?: boolean
   className?: string
-}
+} & ButtonHTMLAttributes<HTMLButtonElement>
 
 const Button = forwardRef<HTMLButtonElement, BtnProps>(
   (
@@ -28,7 +36,7 @@ const Button = forwardRef<HTMLButtonElement, BtnProps>(
       icon,
       text,
       size = 'xSmall',
-      color = 'link',
+      color,
       fullWidth,
       fullWidthMobile,
       ...props

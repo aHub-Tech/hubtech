@@ -29,57 +29,26 @@ const SizesBtn = {
   `
 }
 
-const ColorsBtn = {
-  blue: css`
-    background: ${T.colors.primary};
-    &:focus {
-      box-shadow: 0 0 0 0.2rem rgb(137 161 255),
-        0 0.1rem 1.5rem rgb(62 57 107 / 50%);
-    }
-  `,
-  google: css`
-    background: ${T.gradients.google};
-    &:focus {
-      box-shadow: 0 0 0 0.2rem rgb(255 137 137),
-        0 0.1rem 1.5rem rgb(62 57 107 / 50%);
-    }
-  `,
-  facebook: css`
-    background: ${T.gradients.facebook};
-
-    &:focus {
-      box-shadow: 0 0 0 0.2rem #7fb3fa, 0 0.1rem 1.5rem rgb(62 57 107 / 50%);
-    }
-  `,
-  linkedin: css`
-    background: ${T.gradients.linkedin};
-
-    &:focus {
-      box-shadow: 0 0 0 0.2rem #72b7fc, 0 0.1rem 1.5rem rgb(62 57 107 / 50%);
-    }
-  `
-}
-
 export const Container = styled.button<BtnProps>`
-  ${({ fullWidth, fullWidthMobile, color, size }) => css`
+  ${({ fullWidth, fullWidthMobile, color, size, borderRadiusFull }) => css`
     cursor: pointer;
-    border-radius: 0.5rem;
+    border-radius: ${borderRadiusFull ? '10rem' : '0.5rem'};
     font-weight: 400;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
-    border: 0.1rem solid ${T.colors.grey};
+    border: 0.1rem solid transparent;
     text-shadow: 0 0 0.3rem #00000099;
     background-position-x: 0;
     background-size: 300% !important;
     background-repeat: no-repeat;
     transition: background-position-x 150ms ease-in-out;
     width: ${fullWidthMobile ? '100%' : 'fit-content'};
-    ${!!color && ColorsBtn[color]};
+    background-color: ${!!color && T.colors[color!]};
     ${!!size && SizesBtn[size]}
 
-    ${T.breakPoint(35)} {
+    ${T.breakPoint(T.devices.xs)} {
       width: ${fullWidth ? '100%' : 'fit-content'};
     }
 

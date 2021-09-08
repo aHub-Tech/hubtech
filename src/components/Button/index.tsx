@@ -9,7 +9,7 @@ export type SizeProps =
   | 'large'
   | 'xLarge'
 
-export type ColorProps = 'blue' | 'google' | 'facebook' | 'linkedin'
+export type ColorProps = string | undefined
 
 export interface BtnProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   icon?: ReactNode
@@ -18,6 +18,8 @@ export interface BtnProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   color?: ColorProps
   fullWidth?: boolean
   fullWidthMobile?: boolean
+  borderRadiusFull?: boolean
+  className?: string
 }
 
 const Button = forwardRef<HTMLButtonElement, BtnProps>(
@@ -26,7 +28,7 @@ const Button = forwardRef<HTMLButtonElement, BtnProps>(
       icon,
       text,
       size = 'xSmall',
-      color = 'blue',
+      color = 'link',
       fullWidth,
       fullWidthMobile,
       ...props

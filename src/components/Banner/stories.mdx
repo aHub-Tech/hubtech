@@ -1,0 +1,23 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs'
+import Banner from '.'
+import * as stories from './stories'
+
+<Meta
+  title="Design System/Banner"
+  component={Banner}
+  parameters={{
+    controls: { sort: 'requiredFirst' }
+  }}
+/>
+
+# Banner
+
+Description general.
+
+## Default
+
+Component description.
+
+<Canvas>
+  <Story story={stories.Default} />
+</Canvas>

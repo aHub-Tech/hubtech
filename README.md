@@ -3,8 +3,6 @@
 ![Logo](public/img/logo.png)
 </div>
 
-<br />
-
 <h1 align="center">Projeto Hubtech Site</h1>
 
 <br />

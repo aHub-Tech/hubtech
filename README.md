@@ -3,23 +3,35 @@
 ![Logo](public/img/logo.png)
 </div>
 
-<h1 align="center">Projeto Hubtech Site</h1>
+<h1 align="center">Projeto: Website Hubtech Site</h1>
+
+`* incluir badges de build, test, deploy e homolog`
 
 <br />
 
 # :camera_flash: Screenshots do Projeto
 
+`* colocar imagens do projeto`
+
+<!-- 
 ![Imagem do projeto - desktop](screenshots/desktop.png)
 
 ![Imagem do projeto - mobile](screenshots/mobile.png)
+-->
 
 <br />
 
 # :memo: Sobre o Projeto
 
-Este projeto foi desenvolvido para uso como boilerplate default para a Hubtech.
+Site da HUB Tech, sua comunidade favorita de tecnologia!
 
+Este projeto foi desenvolvido para  o site, mas fique a vontade para usar como boilerplate default para seus projetos também, assim como o objetivo é usar este boilerplate para futuros projetos web da HUB em que ele venha a ser útil. Este projeto inclui as melhores práticas atuais no desenvolvimento frontend assim como tira proveito ao máximo das tecnologias React.js e Next.js, inclui todo o setup para testes unitários e inclui todo o ferramental necessário para usar Storybook tanto para auxiliar no desenvolvimento quanto para ter uma documentação de componentes adequada.
+
+`* Colocar aqui o link do site`
+
+<!--
 Para visualizar o projeto 'online' [clique aqui](https://meu-site-na-vercel).
+-->
 
 <br />
 
@@ -47,6 +59,7 @@ Para visualizar o projeto 'online' [clique aqui](https://meu-site-na-vercel).
 
 ---
 
+<!--
 # :sparkles: Features
 
 - [x] Prover informações sobre os creators;
@@ -54,6 +67,7 @@ Para visualizar o projeto 'online' [clique aqui](https://meu-site-na-vercel).
 <br />
 
 ---
+-->
 
 # :triangular_flag_on_post: Pré-Requisitos
 

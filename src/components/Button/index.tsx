@@ -10,6 +10,7 @@ export type SizeProps =
   | 'xLarge'
 
 export type ColorProps =
+  | 'primary'
   | 'facebook'
   | 'discord'
   | 'instagram'
@@ -36,7 +37,7 @@ const Button = forwardRef<HTMLButtonElement, BtnProps>(
       icon,
       text,
       size = 'xSmall',
-      color,
+      color = 'primary',
       fullWidth,
       fullWidthMobile,
       ...props

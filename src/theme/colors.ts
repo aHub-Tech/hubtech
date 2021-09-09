@@ -8,6 +8,7 @@ export const colors = {
   light: '#474747',
   dark: '#0A0E16',
   darkBC: '#292F3D',
+  bgDefault: '#13171f',
   darkenBlackBC: '#23262D',
   white: '#fff',
   disabled: '#e7e7f6',

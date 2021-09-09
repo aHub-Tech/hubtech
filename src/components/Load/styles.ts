@@ -25,7 +25,7 @@ export const Load = styled.div`
     margin: 0.8rem;
     border-width: 0.2rem;
     border-style: solid;
-    border-color: #496b9f transparent transparent transparent;
+    border-color: #f83b91 transparent transparent transparent;
     border-radius: 50%;
     animation: ${T.animations.rotate} 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   }

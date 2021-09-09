@@ -88,9 +88,10 @@ export const Ul = styled.ul<{ open: boolean }>`
   }
 `
 
-export const Li = styled.li`
+export const Li = styled.li<{ activeLink?: boolean }>`
   cursor: pointer;
-  color: ${T.colors.white};
+  color: ${({ activeLink }) =>
+    activeLink ? T.colors.primary : T.colors.white};
   padding: 1rem 2rem;
   margin: 0 1rem;
   transition: background-color 0.2s linear;
@@ -99,6 +100,7 @@ export const Li = styled.li`
 
   &:hover {
     background-color: ${T.colors.primary};
+    color: ${T.colors.white};
   }
 
   ${T.breakPoint(T.devices.md)} {

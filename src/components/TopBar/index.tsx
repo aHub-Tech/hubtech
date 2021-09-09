@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import * as S from './styles'
 
 const TopBar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false)
+  const router = useRouter()
 
   const clickOpenMenu = () => {
     setIsOpenMenu(prevState => !prevState)
@@ -22,12 +24,12 @@ const TopBar = () => {
           </S.BtnMenu>
 
           <S.Ul open={isOpenMenu}>
-            <S.Li>
+            <S.Li activeLink={router.pathname === '/'}>
               <Link href="/">
                 <a title="A Hub Tech">Home</a>
               </Link>
             </S.Li>
-            <S.Li>
+            <S.Li activeLink={router.pathname === '/creators'}>
               <Link href="/creators">
                 <a title="Conheça nossos creators">Creators</a>
               </Link>
@@ -37,7 +39,7 @@ const TopBar = () => {
                 href="https://discord.gg/ahubtech"
                 title="Entre em nosso servidor do discord"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 Discord
               </a>

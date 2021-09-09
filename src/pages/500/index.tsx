@@ -1,9 +1,13 @@
-import Error from 'layouts/Error'
+import Default from 'layouts/Default'
 import Head from 'next/head'
 import Image from 'next/image'
-import * as S from 'pages/500/styles'
+import { useRouter } from 'next/router'
+import * as S from './styles'
+import * as C from 'components'
 
-export default function Custom404() {
+export default function Custom500() {
+  const router = useRouter()
+
   return (
     <S.Container>
       <Head>
@@ -24,9 +28,19 @@ export default function Custom404() {
         Por favor clique no botão abaixo para retornar à página inicial:
       </S.Paragraph>
 
-      <S.BtnWrapper>botão home</S.BtnWrapper>
+      <S.BtnWrapper>
+        <C.Button
+          aria-label="Página Inicial"
+          size="xLarge"
+          icon={<S.IconHome />}
+          text="Página Inicial"
+          borderRadiusFull={true}
+          fullWidthMobile={true}
+          onClick={() => router.replace('/')}
+        />
+      </S.BtnWrapper>
     </S.Container>
   )
 }
 
-Custom404.Layout = Error
+Custom500.Layout = Default

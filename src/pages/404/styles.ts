@@ -1,14 +1,13 @@
+import { Home4 } from '@styled-icons/remix-line'
 import styled from 'styled-components'
 import T from 'theme'
 
-export const Container = styled(T.layouts.Col)`
+export const Container = styled(T.layouts.Container)`
   align-items: center;
   row-gap: 3rem;
-  background-color: ${T.colors.light};
   padding: 4rem 3rem;
   border-radius: 0;
   height: min-content;
-  box-shadow: 0 0.1rem 1.5rem 0.1rem rgba(62, 57, 107, 0.07);
   max-width: 100%;
   overflow-y: auto;
   animation: ${T.animations.fadeIn} 0.5s ease-in-out,
@@ -23,13 +22,16 @@ export const Container = styled(T.layouts.Col)`
 
 export const Title = styled.h1`
   text-align: center;
+  font-weight: ${T.typography.weight.medium};
 `
 
 export const Paragraph = styled.p`
-  font-size: ${T.typography.sizes.p4};
+  font-size: ${T.typography.sizes.subtitle1};
   text-align: center;
 `
 
 export const BtnWrapper = styled(T.layouts.Row)`
   justify-content: center;
 `
+
+export const IconHome = styled(Home4)``

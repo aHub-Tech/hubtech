@@ -56,7 +56,7 @@ export const Container = styled.button<BtnProps>`
       opacity: 0.9;
     }
     &:focus {
-      box-shadow: 0 0 0.3rem #fff;
+      box-shadow: 0 0 0 0.1rem #fff;
     }
 
     &:active {

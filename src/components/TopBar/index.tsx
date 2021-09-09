@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import * as S from './styles'
@@ -10,6 +10,8 @@ const TopBar = () => {
   const clickOpenMenu = () => {
     setIsOpenMenu(prevState => !prevState)
   }
+
+  useEffect(() => setIsOpenMenu(false), [router])
 
   return (
     <S.Wrapper as="header">

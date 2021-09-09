@@ -22,8 +22,8 @@ export default createGlobalStyle`
   body,
   html,
   #__next {
-    background-color: ${T.colors.white};
-    color: ${T.colors.darkBC};
+    background-color: ${T.colors.bgDefault};
+    color: ${T.colors.white};
   }
 
   body, #root, input, select, textarea, button {
@@ -72,17 +72,17 @@ export default createGlobalStyle`
   scrollbar-width {
     width: 1.2rem !important;
     height: 1.2rem !important;
-    background-color: ${T.colors.white};
+    background-color: ${T.colors.bgDefault};
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: ${T.colors.grey};
+    background-color: ${T.colors.primary};
     border-radius: 2rem;
-    border: 0.3rem solid ${T.colors.white};
+    border: 0.3rem solid ${T.colors.bgDefault};
   }
 
   :root {
-    scrollbar-color: ${T.colors.grey} ${T.colors.white} !important;
+    scrollbar-color: ${T.colors.primary} ${T.colors.bgDefault} !important;
     scrollbar-width: 1.2rem !important;
   }
 `

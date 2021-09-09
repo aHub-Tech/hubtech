@@ -27,7 +27,6 @@ const Banner = () => (
         <S.Img src="/img/banner.png" alt="ImageBanner" />
       </S.WrapperImgBanner>
     </S.Container>
-    .{' '}
   </S.Wrapper>
 )
 

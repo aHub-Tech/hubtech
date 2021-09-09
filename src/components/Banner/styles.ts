@@ -41,6 +41,9 @@ export const Title = styled.h1`
   font-weight: ${T.typography.weight.bold};
   line-height: 1.2;
   font-size: ${T.typography.sizes.title3};
+  opacity: 0;
+  animation: ${T.animations.fadeIn} 0.5s ease-in-out forwards,
+    ${T.animations.move('0', '50px', '0')} 0.5s ease-in-out;
 
   ${T.breakPoint(T.devices.md)} {
     font-size: ${T.typography.sizes.title2};
@@ -48,6 +51,9 @@ export const Title = styled.h1`
 `
 
 export const P = styled.p`
+  opacity: 0;
+  animation: ${T.animations.fadeIn} 0.5s ease-in-out forwards,
+    ${T.animations.move('0', '50px', '0')} 0.5s ease-in-out;
   padding-top: 3rem;
   color: ${T.colors.white};
   font-size: ${T.typography.sizes.subtitle4};
@@ -55,6 +61,9 @@ export const P = styled.p`
 
 export const BtnBanner = styled(Button)`
   margin-top: 3rem;
+  opacity: 0;
+  animation: ${T.animations.fadeIn} 0.5s ease-in-out forwards,
+    ${T.animations.move('0', '50px', '0')} 0.5s ease-in-out;
 `
 
 export const IconDiscord = styled(Discord)``
@@ -74,4 +83,7 @@ export const Img = styled.img`
   ${T.breakPoint(T.devices.sm)} {
     width: 100%;
   }
+  opacity: 0;
+  animation: ${T.animations.fadeIn} 0.5s ease-in-out forwards,
+    ${T.animations.move('0', '50px', '0')} 0.5s ease-in-out;
 `

@@ -72,7 +72,7 @@ export const Ul = styled.ul<{ open: boolean }>`
   left: 0;
   background-color: ${T.colors.dark};
   transition: all 0.25s;
-  top: -100%;
+  top: -300%;
   padding-bottom: 1rem;
   z-index: ${T.layers.topBar};
   opacity: 0;

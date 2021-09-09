@@ -33,6 +33,14 @@ export const Logo = styled.img`
 
 export const Menu = styled.div``
 
+export const ALink = styled.a`
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 2rem;
+`
+
 export const IconHamburger = styled(IconMenu)`
   z-index: ${T.layers.topBar + 1};
   fill: ${T.colors.white};
@@ -92,7 +100,6 @@ export const Li = styled.li<{ activeLink?: boolean }>`
   cursor: pointer;
   color: ${({ activeLink }) =>
     activeLink ? T.colors.primary : T.colors.white};
-  padding: 1rem 2rem;
   margin: 0 1rem;
   transition: background-color 0.2s linear;
   border-top: 0.1rem solid ${T.colors.primary};

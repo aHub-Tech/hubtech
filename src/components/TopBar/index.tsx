@@ -34,24 +34,24 @@ const TopBar = () => {
 
           <S.Ul open={isOpenMenu}>
             <S.Li activeLink={router.pathname === '/'}>
-              <Link href="/">
-                <a title="A Hub Tech">Home</a>
+              <Link href="/" passHref>
+                <S.ALink title="A Hub Tech">Home</S.ALink>
               </Link>
             </S.Li>
             <S.Li activeLink={router.pathname === '/creators'}>
-              <Link href="/creators">
-                <a title="Conheça nossos creators">Creators</a>
+              <Link href="/creators" passHref>
+                <S.ALink title="Conheça nossos creators">Creators</S.ALink>
               </Link>
             </S.Li>
             <S.Li>
-              <a
+              <S.ALink
                 href="https://discord.gg/ahubtech"
                 title="Entre em nosso servidor do discord"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Discord
-              </a>
+              </S.ALink>
             </S.Li>
           </S.Ul>
         </S.Menu>

@@ -25,6 +25,10 @@ export const Logo = styled.img`
   display: flex;
   width: auto;
   height: 2.5rem;
+
+  ${T.breakPoint(T.devices.md)} {
+    height: 5rem;
+  }
 `
 
 export const Menu = styled.div``

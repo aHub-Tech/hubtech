@@ -1,6 +1,5 @@
 import { ReactNode } from 'react'
 import * as S from './styles'
-import * as C from 'components'
 import { ColorProps } from 'components/Button'
 
 export type CardCreatorsProps = {
@@ -47,7 +46,7 @@ const CardCreators = ({
 
     <S.WrapperBtn>
       {socials.map(element => (
-        <C.Button
+        <S.Btn
           icon={IconType[element.social!] || IconType.link}
           key={element.social}
           aria-label={element.social}

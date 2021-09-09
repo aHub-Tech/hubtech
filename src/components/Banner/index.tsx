@@ -1,9 +1,9 @@
 import * as S from './styles'
 
 const Banner = () => (
-  <S.Wrapper>
-    <S.Container>
-      <S.ContentText>
+  <S.Wrapper role="heading">
+    <S.Container as="main">
+      <S.ContentText as="section">
         <S.Title>Sua comunidade favorita de tecnologia</S.Title>
 
         <S.P>
@@ -13,6 +13,7 @@ const Banner = () => (
         </S.P>
 
         <S.BtnBanner
+          aria-label="Entre na Comunidade do Discord"
           size="large"
           icon={<S.IconDiscord />}
           text="Quero fazer parte"
@@ -22,7 +23,7 @@ const Banner = () => (
         />
       </S.ContentText>
 
-      <S.WrapperImgBanner>
+      <S.WrapperImgBanner as="section">
         <S.Img src="/img/banner.png" alt="ImageBanner" />
       </S.WrapperImgBanner>
     </S.Container>

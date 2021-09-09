@@ -9,14 +9,14 @@ import {
 } from '@styled-icons/remix-line'
 import styled from 'styled-components'
 import T from 'theme'
+import * as C from 'components'
 
 export const Wrapper = styled(T.layouts.Col)`
   background-color: ${T.colors.darkBlue};
-  max-width: 40rem;
   border-radius: ${T.border.borderRadius.large};
   padding: 3rem 2rem;
   align-items: center;
-  width: 32rem;
+  width: 100%;
   border-bottom: 0.5rem solid ${T.colors.primary};
 `
 
@@ -69,6 +69,10 @@ export const WrapperBtn = styled(T.layouts.Row)`
   & > button {
     margin: 0.5rem;
   }
+`
+
+export const Btn = styled(C.Button)`
+  border: 0.1rem solid ${T.colors.white};
 `
 
 export const IconTwitch = styled(Twitch)``

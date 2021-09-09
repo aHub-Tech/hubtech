@@ -21,11 +21,11 @@ const SizesBtn = {
   `,
   large: css`
     font-size: ${T.typography.sizes.p3};
-    padding: 1.2rem 2rem;
+    padding: 1.2rem 4rem;
   `,
   xLarge: css`
     font-size: ${T.typography.sizes.p1};
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 4rem;
   `
 }
 
@@ -52,9 +52,11 @@ export const Container = styled.button<BtnProps>`
       width: ${fullWidth ? '100%' : 'fit-content'};
     }
 
-    &:hover,
+    &:hover {
+      opacity: 0.9;
+    }
     &:focus {
-      background-position-x: 99.5%;
+      box-shadow: 0 0 0.3rem #fff;
     }
 
     &:active {

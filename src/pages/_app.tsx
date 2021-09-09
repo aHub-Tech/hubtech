@@ -1,16 +1,9 @@
 import { Fragment } from 'react'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import Router from 'next/router'
-import NProgress from 'nprogress'
 import GlobalStyles from 'styles/GlobalStyles'
 import { Page } from 'types/page'
-import 'styles/loading.css'
 import * as C from 'components'
-
-Router.events.on('routeChangeStart', () => NProgress.start())
-Router.events.on('routeChangeComplete', () => NProgress.done())
-Router.events.on('routeChangeError', () => NProgress.done())
 
 type Props = AppProps & { Component: Page }
 

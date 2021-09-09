@@ -15,7 +15,16 @@ const TopBar = () => {
     <S.Wrapper as="header">
       <S.Container>
         <S.WrapperLogo>
-          <S.Logo src="/img/logo.png" width={157} height={55} alt="Hubtech" />
+          <Link href="/">
+            <a>
+              <S.Logo
+                src="/img/logo.png"
+                width={157}
+                height={55}
+                alt="Hubtech"
+              />
+            </a>
+          </Link>
         </S.WrapperLogo>
 
         <S.Menu as="nav">

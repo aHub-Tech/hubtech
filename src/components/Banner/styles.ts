@@ -41,9 +41,14 @@ export const Title = styled.h1`
   font-weight: ${T.typography.weight.bold};
   line-height: 1.2;
   font-size: ${T.typography.sizes.title3};
+  text-align: center;
   opacity: 0;
   animation: ${T.animations.fadeIn} 0.5s ease-in-out forwards,
     ${T.animations.move('0', '50px', '0')} 0.5s ease-in-out;
+
+  ${T.breakPoint(T.devices.xs)} {
+    text-align: left;
+  }
 
   ${T.breakPoint(T.devices.md)} {
     font-size: ${T.typography.sizes.title2};
@@ -57,6 +62,11 @@ export const P = styled.p`
   padding-top: 3rem;
   color: ${T.colors.white};
   font-size: ${T.typography.sizes.subtitle4};
+  text-align: center;
+
+  ${T.breakPoint(T.devices.xs)} {
+    text-align: left;
+  }
 `
 
 export const BtnBanner = styled(Button)`

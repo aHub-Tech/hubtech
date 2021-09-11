@@ -26,5 +26,14 @@ module.exports = withPWA({
     ]
   },
   reactStrictMode: true,
-  pageExtensions: ['tsx']
+  pageExtensions: ['tsx'],
+  async redirects() {
+    return [
+      {
+        source: '/discord',
+        destination: 'https://discord.com/invite/ahubtech',
+        permanent: false
+      }
+    ]
+  }
 })

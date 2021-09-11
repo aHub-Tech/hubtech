@@ -20,6 +20,8 @@ const Banner = () => (
           borderRadiusFull={true}
           color="discord"
           fullWidthMobile={true}
+          isLink={true}
+          href="/discord"
         />
       </S.ContentText>
 

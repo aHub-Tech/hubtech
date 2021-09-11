@@ -29,6 +29,8 @@ export type BtnProps = {
   fullWidthMobile?: boolean
   borderRadiusFull?: boolean
   className?: string
+  isLink?: boolean
+  href?: string
 } & ButtonHTMLAttributes<HTMLButtonElement>
 
 const Button = forwardRef<HTMLButtonElement, BtnProps>(
@@ -40,16 +42,20 @@ const Button = forwardRef<HTMLButtonElement, BtnProps>(
       color = 'primary',
       fullWidth,
       fullWidthMobile,
+      isLink = false,
+      href = '',
       ...props
     },
     ref
   ) => (
     <S.Container
+      as={isLink ? 'a' : 'button'}
       color={color}
       size={size}
       fullWidth={fullWidth}
       fullWidthMobile={!!fullWidth || fullWidthMobile}
       {...props}
+      {...(isLink && { href, target: '_blank' })}
       ref={ref}
     >
       {icon}

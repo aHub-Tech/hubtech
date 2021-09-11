@@ -117,6 +117,8 @@ export const Li = styled.li<{ activeLink?: boolean }>`
 `
 
 export const WrapperBtn = styled.div`
+  opacity: 0;
+  cursor: inherit;
   color: ${T.colors.white};
   background-color: ${T.colors.primary};
   padding: 1rem 2rem;

@@ -52,6 +52,8 @@ const CardCreators = ({
           aria-label={element.social}
           size="small"
           color={IconType[element.social!] ? element.social : 'link'}
+          isLink
+          href={element.link}
         />
       ))}
     </S.WrapperBtn>

@@ -3,9 +3,10 @@ import Cookies from 'js-cookie'
 import Router from 'next/router'
 import errorApi from 'utils/errorApi'
 
-export const baseURL = process.env.NEXT_PUBLIC_API_URL
+export const baseURL =
+  process.env.NEXT_PUBLIC_API_URL ?? 'https://ahub-api.herokuapp.com/'
 
-// export const api = axios.create({ baseURL: baseURL })
+export const api = axios.create({ baseURL: baseURL })
 
 export const minutesToExpireCookie = new Date(
   new Date().getTime() + 60 * 60 * 1000

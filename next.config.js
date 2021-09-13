@@ -31,7 +31,7 @@ module.exports = withPWA({
     return [
       {
         source: '/discord',
-        destination: 'https://discord.com/invite/ahubtech',
+        destination: 'https://discord.com/invite/RMDSHVkDmE',
         permanent: false
       }
     ]

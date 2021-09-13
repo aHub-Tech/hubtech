@@ -47,7 +47,7 @@ const TopBar = () => {
             </S.Li>
             <S.Li>
               <S.ALink
-                href="https://discord.gg/ahubtech"
+                href="https://discord.com/invite/RMDSHVkDmE"
                 title="Entre em nosso servidor do discord"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -55,6 +55,15 @@ const TopBar = () => {
                 Discord
               </S.ALink>
             </S.Li>
+            <S.Li>
+              <S.ALink
+                href="https://github.com/ahub-tech"
+                title="Contribua com os nossos projetos"
+                target="_blank"
+              >
+                Github
+              </S.ALink>
+            </S.Li>
           </S.Ul>
         </S.Menu>
 

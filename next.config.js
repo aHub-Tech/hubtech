@@ -10,8 +10,7 @@ module.exports = withPWA({
     deviceSizes: [320, 420, 768, 1024, 1200, 1300, 1500, 1700],
     iconSizes: [],
     domains: [],
-    path: '/_next/image',
-    loader: 'default'
+    path: '/_next/image'
   },
   eslint: {
     dirs: [
